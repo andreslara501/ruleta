@@ -1,0 +1,42 @@
+<script>
+	document.addEventListener("DOMContentLoaded", function(event) {
+  		$('#cargando').fadeOut();
+	});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script type="text/javascript" src="js/basic.js"></script>
+<link rel="stylesheet" type="text/css" href="css/basic.css">
+
+<div id="cargando" style="display: table; width: 100%; height: 100%; position:fixed; left:0px; right: 0px; bottom: 0px; top: 0px; background: white;     z-index: 9999999999;">
+	<div style="display: table; z-index:9999999999999999999999999; width: 100%; height: 100%">
+		<div style="display: table-cell;vertical-align:middle; text-align: center">
+			Cargando aplicación...
+		</div>
+	</div>
+</div>
+
+<div id="contenido">
+	<div id="contenedor_animacion_monedas">
+		<img id="animacion_monedas" src="img/monedas/monedas_ok_00000.png">
+	</div>
+
+	<div style="display: flex; justify-content: center;">
+		<div id="contenedor_ruleta">
+			<img id="pin" src="img/pin.png">
+			<img id="ruleta_img" src="img/ruleta.png">
+		</div>
+	</div>
+
+	<div id="contenedor_boton">
+		<img id="boton_parar" src="img/boton_activo.png" value="true">
+	</div>
+
+	<audio id="myAudio">
+  		<source src="sonidos/ruleta.mp3" type="audio/mpeg">
+  		Your browser does not support the audio element.
+	</audio>
+
+	<div id="numero_ganador">
+		Ganador: 90
+	</div>
+</div>
